@@ -2,7 +2,7 @@
 @import '../scssConfig/header';
 
 .wrapper {
-    padding: 65px 0 10px;
+    padding: 65px 0 20px;
 
     .title {
         @include styleForText(32px, $fontRegular, $colorBlack);
@@ -24,7 +24,7 @@
         
             .input {
                 width: 100%;
-                border-bottom: 1px solid #eee;
+                border-bottom: 1px solid #f2f2f2;
                 font-size: 16px;
                 color: $colorBlack;
                 padding: 10px 5px;
