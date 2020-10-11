@@ -10,3 +10,7 @@ textarea.addEventListener('input', () => {
         btn.disabled = true;
     }
 });
+
+btn.addEventListener('click', () => {
+    location.href = 'http://localhost:3000/complete.html';
+});

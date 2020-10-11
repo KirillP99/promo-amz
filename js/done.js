@@ -14,3 +14,7 @@ file.addEventListener('input', () => {
 imgButton.addEventListener('click', () => {
     file.click();
 });
+
+btn.addEventListener('click', () => {
+    location.href = 'http://localhost:3000/email.html';
+});

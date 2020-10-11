@@ -2,7 +2,8 @@
 
 .info-wrapper {
   width: 100%;
-  padding: 98px 0 258px;
+  padding: 100px 0 0;
+  height: 100vh;
   background-color: $mainColor;
   display: flex;
   flex-direction: column;
@@ -22,5 +23,5 @@
 
 .card-image {
   position: absolute;
-  bottom: 105px;
+  bottom: 310px;
 }
