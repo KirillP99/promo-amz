@@ -15,6 +15,8 @@
 .container {
   @include container(1200px);
 
+  display: flex;
+  justify-content: space-between;
   height: 100%;
   padding: 40px 0 64px;
   position: relative;
@@ -48,9 +50,10 @@
   max-width: 367px;
   width: 100%;
   background-color: $colorGrey;
-  position: absolute;
+  position: relative;
   right: 0;
-  bottom: -38px;
+  height: 235px;
+  top: 230px;
 }
 
 .text-block-title {
@@ -68,4 +71,63 @@
   @include styleForMainButton(100%, 13px, 13px);
 
   margin-top: 70px;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    height: 560px;
+  }
+
+  .container {
+    padding: 40px 65px 65px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text-block {
+    max-width: 100%;
+    background-color: transparent;
+    padding: 0;
+    height: inherit;
+    margin-bottom: 40px;
+  }
+
+  .text-block-title {
+    max-width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .text-block-time {
+    display: none;
+  }
+
+  .text-block-button {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    height: 475px;
+  }
+
+  .container {
+    padding: 40px 23px 65px;
+  }
+
+  .title {
+    max-width: 280px;
+    line-height: 60px;
+    font-size: 52px;
+  }
+
+  .card-image {
+    top: 8px;
+    left: 117px;
+  }
+
+  .text-block {
+    top: 270px;
+  }
 }
