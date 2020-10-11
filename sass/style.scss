@@ -13,3 +13,71 @@
 .logo {
   margin-bottom: 30px;
 }
+
+.wrapper {
+  width: 100%;
+  background-color: $mainColor;
+  position: relative;
+}
+
+.group-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.container {
+  @include container(1366px);
+  height: 100%;
+  padding: 40px 0 64px;
+  position: relative;
+}
+
+.title {
+  max-width: 360px;
+  position: relative;
+  color: $colorWhite;
+  text-decoration: underline;
+  line-height: 84px;
+  text-decoration-color: $colorWhite;
+  margin-top: 70px;
+}
+
+.card-image {
+  position: absolute;
+  top: 15px;
+  left: 150px;
+}
+
+.text {
+  @include styleForText(18px, $fontArialRegular, $colorWhite);
+  max-width: 300px;
+  margin-top: 25px;
+}
+
+.text-block {
+  padding: 50px 60px 38px;
+  max-width: 367px;
+  width: 100%;
+  background-color: $colorGrey;
+  position: absolute;
+  right: 0;
+  bottom: -38px;
+}
+
+.text-block-title {
+  color: $colorBlack;
+  max-width: 304px;
+}
+
+.text-block-time {
+  @include styleForText(18px, $fontArialRegular, $colorDarkGrey);
+
+  margin-top: 20px;
+}
+
+.text-block-button {
+  @include styleForMainButton(100%);
+
+  margin-top: 70px;
+}

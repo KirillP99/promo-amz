@@ -24,3 +24,12 @@
   #{'-moz-' + $property}: $value;
   #{'-ms-' + $property}: $value;
 }
+
+@mixin styleForMainButton ($width) {
+  width: $width;
+  padding: 13px 0 14px;
+  border-radius: 3px;
+  background: transparent linear-gradient(180deg, #f7e1a8 0%, #edc24f 100%) 0 0 no-repeat padding-box;
+
+  @include styleForText(18px, $fontRegular, $colorBlack);
+}
