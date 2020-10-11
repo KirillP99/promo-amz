@@ -1,2 +1,108 @@
 @import '../scssConfig/index';
 @import '../scssConfig/header';
+
+.wrapper {
+    padding: 65px 0 10px;
+
+    .title {
+        @include styleForText(32px, $fontRegular, $colorBlack);
+        
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .step-block {
+        max-width: 490px;
+        margin: auto;
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            border-bottom: 1px solid #f8f8f8;
+            padding-bottom: 25px;
+
+            &:last-child {
+                border: 0;
+            }
+
+            .number {
+                @include styleForText(28px, $fontRegular, #cfcfcf);
+                margin-right: 25px;
+
+                span {
+                    font-size: 13px;
+                    position: relative;
+                    left: -4px;
+                }
+            }
+
+            .desc {
+                @include styleForText(20px, Arial, #0e0e0e);
+
+                display: flex;
+                flex-direction: column;
+                width: 390px;
+                letter-spacing: 0px;
+                font-weight: normal;
+
+                .step-link {
+                    @include styleForText(13px, Arial, #ec912d);
+
+                    font-weight: bold;
+                    margin-top: 7px;
+                }
+            }
+
+            .btn-block {
+                .btn {
+                    @include styleForMainButton(180px, 13px, 13px);
+
+                    .btn-img {
+                        position: relative;
+                        top: 2px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .second-step {
+            padding-top: 25px;
+        }
+
+        .third-step {
+            padding-top: 25px;
+        }
+    }
+
+    .step-btn {
+        text-align: center;
+        margin-top: 230px;
+
+        .btn {
+            @include styleForMainButton(335px, 13px, 13px);
+
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        padding: 150px 0 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {
+        padding: 30px 0 10px;
+
+        .step-block {
+            padding: 0 40px;
+        }
+
+        .step-btn {
+            margin-top: 70px;
+        }
+    }
+}
