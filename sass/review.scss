@@ -22,13 +22,15 @@
             max-width: 490px;
             padding-right: 15px;
         
-            .input {
+            .textarea {
                 width: 100%;
+                border: 0;
                 border-bottom: 1px solid #eee;
                 font-size: 16px;
                 color: $colorBlack;
                 padding: 10px 5px;
                 outline: none !important;
+                resize: none;
                 font-family: Arial, sans-serif;
 
                 &::placeholder {
