@@ -27,7 +27,8 @@
 }
 
 .container {
-  @include container(1366px);
+  @include container(1365px);
+
   height: 100%;
   padding: 40px 0 64px;
   position: relative;
@@ -51,6 +52,7 @@
 
 .text {
   @include styleForText(18px, $fontArialRegular, $colorWhite);
+  
   max-width: 300px;
   margin-top: 25px;
 }
@@ -80,4 +82,10 @@
   @include styleForMainButton(100%);
 
   margin-top: 70px;
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    max-width: 1100px;
+  }
 }

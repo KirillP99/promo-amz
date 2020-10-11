@@ -13,8 +13,7 @@
 }
 
 @mixin container ($width) {
-  width: $width;
-  max-width: 1920px;
+  max-width: $width;
   margin: 0 auto;
   padding: 0;
 }

@@ -1,0 +1,32 @@
+.header {
+    background: transparent linear-gradient(272deg, #e6cb83 0%, #d5b150 100%) 0% 0% no-repeat padding-box;
+    
+    .content {
+        @include container(1200px);
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .logo {
+        display: flex;
+        position: relative;
+        top: 3px;
+        width: 90px;
+
+        .logo-img {
+            width: 100%;
+        }
+    }
+
+    .card {
+        display: flex;
+        width: 70px;
+        
+        .card-img {
+            width: 100%;
+        }
+    }
+}
