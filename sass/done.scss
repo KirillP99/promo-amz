@@ -58,7 +58,6 @@
 
                 .btn {
                     position: absolute;
-                    opacity: 1;
                     @include styleForMainButton(180px, 13px, 13px);
 
                     .btn-img {
