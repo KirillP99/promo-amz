@@ -1,19 +1,5 @@
 @import "./scssConfig/index";
 
-.info-wrapper {
-  width: 100%;
-  height: 678px;
-  background-color: $mainColor;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.logo {
-  margin-bottom: 30px;
-}
-
 .wrapper {
   width: 100%;
   background-color: $mainColor;
@@ -52,7 +38,7 @@
 
 .text {
   @include styleForText(18px, $fontArialRegular, $colorWhite);
-  
+
   max-width: 300px;
   margin-top: 25px;
 }

@@ -1,0 +1,26 @@
+@import '../scssConfig/index';
+
+.info-wrapper {
+  width: 100%;
+  padding: 98px 0 258px;
+  background-color: $mainColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  color: $colorWhite;
+  text-decoration: underline;
+  text-decoration-color: $colorWhite;
+  text-align: center;
+  width: 563px;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.card-image {
+  position: absolute;
+  bottom: 105px;
+}

@@ -1,9 +1,9 @@
 .header {
-    background: transparent linear-gradient(272deg, #e6cb83 0%, #d5b150 100%) 0% 0% no-repeat padding-box;
-    
+    background: transparent linear-gradient(272deg, #e6cb83 0%, #d5b150 100%) 0 0 no-repeat padding-box;
+
     .content {
         @include container(1200px);
-        
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -24,7 +24,7 @@
     .card {
         display: flex;
         width: 70px;
-        
+
         .card-img {
             width: 100%;
         }
