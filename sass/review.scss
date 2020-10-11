@@ -1,0 +1,88 @@
+@import '../scssConfig/index';
+@import '../scssConfig/header';
+
+.wrapper {
+    padding: 65px 0 10px;
+
+    .title {
+        @include styleForText(32px, $fontRegular, $colorBlack);
+        
+        text-align: center;
+        width: 250px;
+        margin: 0 auto 80px;
+    }
+
+    .content {
+        max-width: 490px;
+        margin: auto;
+        position: relative;
+
+        .input-block {
+            margin-bottom: 15px;
+            max-width: 490px;
+            padding-right: 15px;
+        
+            .textarea {
+                width: 100%;
+                border: 0;
+                border-bottom: 1px solid #eee;
+                font-size: 16px;
+                color: $colorBlack;
+                padding: 10px 5px;
+                outline: none !important;
+                resize: none;
+                font-family: Arial, sans-serif;
+
+                &::placeholder {
+                    color: rgba(207, 207, 207, 0.2);
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .prefix-block {
+            display: flex;
+            margin: auto;
+            max-width: 490px;
+            overflow-x: auto;
+
+            .prefix {
+                border-width: 0;
+                border-radius: 20px;
+                padding: 7px 15px;
+                background-color: #f2f2f2;
+                color: #979797;
+                font-size: 14px;
+                margin-right: 5px;
+                outline: none !important;
+                cursor: pointer;
+                transition: all .2s ease-out;
+
+                &:hover {
+                    background-color: darken(#f2f2f2, 10%);
+                }
+
+                &:active {
+                    background-color: lighten(#f2f2f2, 2%);
+                }
+            }
+        }
+    }
+
+    .step-btn {
+        text-align: center;
+        margin-top: 230px;
+
+        .btn {
+            @include styleForMainButton(335px, 13px, 13px);
+
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        padding: 0 10px;
+    }
+}
