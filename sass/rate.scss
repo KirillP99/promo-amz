@@ -99,6 +99,32 @@
   }
 }
 
-.link-step {
-  @include styleForText(334px, 13px, 14px);
+.link-step-rate {
+  @include styleForMainButton(334px, 13px, 14px);
+
+  margin-top: 84px;
+}
+
+@media screen and (max-width: 700px) {
+  .info-wrapper {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .info-wrapper {
+    margin-top: 50px;
+  }
+
+  .range {
+    width: 334px;
+  }
+
+  .link-step-rate {
+    margin-top: 64px;
+  }
+
+  .stars-wrapper {
+    width: 334px;
+  }
 }
