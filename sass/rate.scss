@@ -24,3 +24,81 @@
 
   @include styleForText(16px, $fontArialRegular, rgba(14, 14, 14, 0.7))
 }
+
+.range {
+  width: 406px;
+  margin-top: 48px;
+}
+
+.ui-slider {
+  border-radius: 3px !important;
+  height: 4px !important;
+  background: #e9e9e9;
+  border: none !important;
+}
+
+.ui-slider-handle {
+  border: 7px solid transparent !important;
+  border-bottom: 14px solid #efa31f !important;
+  background: none !important;
+  border-radius: 0 !important;
+  width: 0 !important;
+  top: -38px !important;
+  cursor: pointer !important;
+}
+
+.ui-slider-range {
+  background: transparent linear-gradient(90deg, #F7E1A8 0%, #EDC24F 100%) 0% 0% no-repeat padding-box !important;
+}
+
+.lines-range {
+  display: flex;
+  justify-content: space-between;
+  width: 406px;
+  margin-top: 2.5px;
+  position: relative;
+}
+
+.line-range {
+  width: 1px;
+  height: 10px;
+  display: block;
+  background: #f6de9e;
+  position: absolute;
+
+  &:nth-child(1) {
+    left: 97px;
+  }
+
+  &:nth-child(2) {
+    left: 199px;
+  }
+
+  &:nth-child(3) {
+    left: 300px;
+  }
+}
+
+.stars-wrapper {
+  position: relative;
+  width: 406px;
+}
+
+.stars {
+  position: absolute;
+  top: 16px;
+  left: 42%;
+  display: flex;
+}
+
+.star-image {
+  margin-right: 3px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.link-step {
+  @include styleForText(334px, 13px, 14px);
+}

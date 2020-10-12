@@ -14,10 +14,30 @@ li {
 
 a {
   text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 input {
   border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 h1 {

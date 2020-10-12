@@ -36,6 +36,7 @@
     border-color: #d1d1d1;
     color: #bebebe;
     background: transparent linear-gradient(180deg, #f4f4f4 0, #e2e2e2 100%) 0 0 no-repeat padding-box;
+    cursor: not-allowed;
   }
 
   @include styleForText(16px, $fontRegular, $colorBlack);

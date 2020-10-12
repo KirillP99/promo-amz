@@ -5,6 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css" />
+    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/rate.css" />
     <title>Document</title>
 </head>
@@ -25,6 +28,64 @@
                 <img class="router-img" src="./assets/images/router.png" alt="router">
             </div>
             <p class="rate-text">Please rate the product</p>
+            <div class="stars-wrapper">
+                <div class="stars">
+                    <img class="star-image" src="./assets/images/star.svg" alt="star" />
+                    <img class="star-image" src="./assets/images/star.svg" alt="star" />
+                    <img class="star-image" src="./assets/images/star.svg" alt="star" />
+                </div>
+            </div>
+            <div class="range"></div>
+            <div class="lines-range">
+                <span class="line-range"></span>
+                <span class="line-range"></span>
+                <span class="line-range"></span>
+            </div>
+            <a href="/done.html" class="link-step">Next 1/4</a>
         </main>
+
+        <script>
+          const stars = document.querySelector('.stars');
+          const star = document.querySelector('.star-image');
+
+          const changeStars = (amountStars) => {
+            stars.innerHTML = '';
+            for (let i = 0; i <= amountStars; i += 1) {
+              const newNode = star.cloneNode(true);
+              stars.appendChild(newNode);
+            }
+          };
+
+          const getLeft = (amountStars) => {
+            switch (amountStars) {
+                case 0: {
+                  return -3;
+                }
+                case 1: {
+                  return 19.6;
+                }
+                case 2: {
+                  return 42;
+                }
+                case 3: {
+                  return 65;
+                }
+                case 4: {
+                  return 87;
+                }
+            }
+          };
+
+          $( ".range" ).slider({
+            animate: "slow",
+            range: "min",
+            value: 60,
+            step: 25,
+            change: (event, { value }) => {
+              stars.style.left = `${getLeft(value / 25)}%`;
+              changeStars(value / 25);
+            }
+          });
+        </script>
     </body>
 </html>
