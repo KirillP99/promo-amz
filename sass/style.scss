@@ -113,13 +113,14 @@
   }
 
   .container {
-    padding: 40px 23px 65px;
+    padding: 40px 20px 65px;
   }
 
   .title {
     max-width: 280px;
     line-height: 60px;
     font-size: 52px;
+    margin-top: 53px;
   }
 
   .card-image {
@@ -128,6 +129,20 @@
   }
 
   .text-block {
-    top: 270px;
+    top: 147px;
+  }
+
+  .text-block-title {
+    color: rgba(14, 14, 14, 0.7);
+  }
+
+  .text {
+    font-size: 15px;
+    max-width: 264px;
+    margin-top: 24px;
+  }
+
+  .link-index {
+    margin-top: 20px;
   }
 }
