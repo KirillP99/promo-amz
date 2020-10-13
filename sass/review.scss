@@ -6,7 +6,7 @@
 
     .title {
         @include styleForText(32px, $fontRegular, $colorBlack);
-        
+
         text-align: center;
         width: 250px;
         margin: 0 auto 80px;
@@ -21,7 +21,7 @@
             margin-bottom: 15px;
             max-width: 490px;
             padding-right: 15px;
-        
+
             .textarea {
                 width: 100%;
                 border: 0;
@@ -83,6 +83,10 @@
 
 @media screen and (max-width: 500px) {
     .content {
-        padding: 0 10px;
+        padding: 0 20px;
+    }
+
+    .wrapper .step-btn {
+        margin-top: 200px;
     }
 }
