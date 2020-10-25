@@ -5,9 +5,6 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css" />
-    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/rate.css" />
     <title>Document</title>
 </head>
@@ -23,27 +20,18 @@
             </div>
         </header>
         <main class="info-wrapper">
+            <p class="main-desc">This product was selected at random from your purchase history</p>
             <h3 class="title">Setek WiFI Extender</h3>
             <div class="router">
                 <img class="router-img" src="./assets/images/router.png" alt="router">
             </div>
             <p class="rate-text">Please rate the product</p>
-            <div class="stars-wrapper">
-                <div class="stars">
-                    <img class="star-image" src="./assets/images/star.svg" alt="star" />
-                    <img class="star-image" src="./assets/images/star.svg" alt="star" />
-                    <img class="star-image" src="./assets/images/star.svg" alt="star" />
-                </div>
-            </div>
-            <div class="range"></div>
-            <div class="lines-range">
-                <span class="line-range"></span>
-                <span class="line-range"></span>
-                <span class="line-range"></span>
-            </div>
+            <div id="rate"></div>
             <button class="link-step-rate">Next 1/4</button>
         </main>
 
-        <script src="js/rate.js"></script>
+        <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/rater.min.js"></script>
+        <script src="js/rating.js"></script>
     </body>
 </html>
