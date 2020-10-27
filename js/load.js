@@ -13,7 +13,7 @@ const move = () => {
 			if (width >= 100) {
 				clearInterval(id);
 				i = 0;
-				location.href = 'rate.html';
+				// location.href = 'rate.html';
 			} else {
 				width += 20;
 				elem.style.width = width + "%";
