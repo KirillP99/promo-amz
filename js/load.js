@@ -1,31 +1,28 @@
-let statusTracker;
-let percentage = 0;
+let i = 0;
 
-const checkStatus = () => {
-	percentage += 20;
-	
-	$('#progressBar.green').animate({
-		width : percentage + '%'
-	});
-	
-	if (percentage === 120) {
-		stop();
-		location.href = 'rate.html';
+const move = () => {
+	if (i === 0) {
+		i = 1;
+		
+		const elem = document.querySelector('.img-wrapper');
+		let width = 0;
+		
+		const id = setInterval(frame, 500);
+		
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id);
+				i = 0;
+				location.href = 'rate.html';
+			} else {
+				width += 20;
+				elem.style.width = width + "%";
+			}
+		}
 	}
 }
 
-const startProgress = () => {
-	statusTracker = setInterval(checkStatus, 1200);
-}
-
-const stop = () => {
-	clearInterval(statusTracker);
-}
 
 $(document).ready(() => {
-	$('#progressBar').progressbar({
-		value: 1
-	});
-	
-	startProgress();
+	move();
 });
