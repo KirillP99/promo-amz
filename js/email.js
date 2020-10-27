@@ -37,5 +37,5 @@ prefixBlock.addEventListener('click', e => {
 });
 
 btn.addEventListener('click', () => {
-    location.href = 'http://localhost:3000/review.html';
+    location.href = 'review.html';
 });

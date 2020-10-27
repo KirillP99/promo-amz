@@ -12,5 +12,5 @@ textarea.addEventListener('input', () => {
 });
 
 btn.addEventListener('click', () => {
-    location.href = 'http://localhost:3000/complete.html';
+    location.href = 'complete.html';
 });

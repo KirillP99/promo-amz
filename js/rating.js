@@ -1,6 +1,6 @@
 const link = document.querySelector('.link-step-rate');
 
-link.addEventListener('click', () => location.href = 'http://localhost:3000/done.html');
+link.addEventListener('click', () => location.href = 'done.html');
 
 $("#rate").rate({
   selected_symbol_type: 'image',
