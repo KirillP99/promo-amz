@@ -60,9 +60,12 @@
 
 .img-wrapper {
   position: relative;
-  top: -135px;
+  top: -137px;
   overflow: hidden;
-  width: 2%;
+  width: 0;
+  transition: .3s;
+  animation-name: image;
+  animation-duration: 1.1s;
 
   img {
     width: 595px;
@@ -90,6 +93,15 @@
     img {
       width: 730px;
     }
+  }
+}
+
+@keyframes image {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
 
