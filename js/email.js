@@ -1,10 +1,10 @@
 const input = document.querySelector('.input');
-const prefixBlock = document.querySelector('.prefix-block');
 const btn = document.querySelector('.btn');
+// const prefixBlock = document.querySelector('.prefix-block');
 
 btn.disabled = true;
 
-const changeInputEvent = new Event('input');
+// const changeInputEvent = new Event('input');
 
 input.addEventListener('input', () => {
     if (input.value.indexOf('@') !== -1) {
@@ -14,27 +14,27 @@ input.addEventListener('input', () => {
     }
 });
 
-prefixBlock.addEventListener('click', e => {
-    e.preventDefault();
+// prefixBlock.addEventListener('click', e => {
+//     e.preventDefault();
 
-    if (!input.value) {
-        return;
-    }
+//     if (!input.value) {
+//         return;
+//     }
 
-    if (e.target.className === 'prefix' && input.value.indexOf('@') !== -1) {
-        input.value = input.value.replace(/(@.+)/g, e.target.innerText);
-        return;
-    }
+    // if (e.target.className === 'prefix' && input.value.indexOf('@') !== -1) {
+    //     input.value = input.value.replace(/(@.+)/g, e.target.innerText);
+    //     return;
+    // }
 
-    if (e.target.className === 'prefix') {
-        input.value += e.target.innerText;
-        input.dispatchEvent(changeInputEvent);
-    }
+    // if (e.target.className === 'prefix') {
+    //     input.value += e.target.innerText;
+    //     input.dispatchEvent(changeInputEvent);
+    // }
 
-    input.removeEventListener('input', changeInputEvent);
+//     input.removeEventListener('input', changeInputEvent);
 
-    return;
-});
+//     return;
+// });
 
 btn.addEventListener('click', () => {
     location.href = 'review.html';

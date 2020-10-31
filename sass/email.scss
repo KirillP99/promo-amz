@@ -24,7 +24,7 @@
         
             .input {
                 width: 100%;
-                border-bottom: 1px solid #f2f2f2;
+                border-bottom: 1px solid darken(#f2f2f2, 2%);
                 font-size: 16px;
                 color: $colorBlack;
                 padding: 10px 5px;
@@ -32,7 +32,7 @@
                 font-family: Arial, sans-serif;
 
                 &::placeholder {
-                    color: rgba(207, 207, 207, 0.2);
+                    color: darken(#f5f5f5, 6%);
                     font-size: 20px;
                 }
             }
